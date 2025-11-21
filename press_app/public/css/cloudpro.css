@@ -1,23 +1,26 @@
 /* ===== CSS Variables ===== */
 :root {
-    --primary: #2563eb;
-    --primary-dark: #1d4ed8;
-    --primary-light: #3b82f6;
-    --secondary: #7c3aed;
-    --accent: #06b6d4;
+    /* Cacique Cloud Color Palette */
+    --primary: #1e3a5f;           /* Dark Navy Blue */
+    --primary-dark: #152a45;       /* Darker Navy */
+    --primary-light: #2a4d7a;      /* Lighter Navy */
+    --secondary: #3d7a99;          /* Teal Blue */
+    --accent: #b8924a;             /* Gold */
+    --accent-light: #d4a854;       /* Light Gold */
+    --teal: #4a9db8;               /* Bright Teal */
     --success: #10b981;
-    --warning: #f59e0b;
+    --warning: #b8924a;            /* Gold for warnings */
     --danger: #ef4444;
 
-    --text-dark: #1f2937;
-    --text-medium: #4b5563;
-    --text-light: #6b7280;
-    --text-muted: #9ca3af;
+    --text-dark: #1e3a5f;          /* Navy for text */
+    --text-medium: #3d5a80;
+    --text-light: #5a7a9a;
+    --text-muted: #8aa4bd;
 
     --bg-white: #ffffff;
-    --bg-light: #f9fafb;
-    --bg-gray: #f3f4f6;
-    --bg-dark: #111827;
+    --bg-light: #f5f7fa;           /* Slightly blue-tinted */
+    --bg-gray: #e8eef4;
+    --bg-dark: #1e3a5f;            /* Navy dark background */
 
     --border-light: #e5e7eb;
     --border-medium: #d1d5db;
@@ -195,12 +198,18 @@ h4 { font-size: 1.25rem; }
     font-weight: 800;
 }
 
-.logo-icon {
-    font-size: 1.75rem;
+.logo-image {
+    height: 50px;
+    width: auto;
+}
+
+.footer-logo {
+    height: 60px;
+    filter: brightness(0) invert(1);
 }
 
 .logo-text .highlight {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .nav-menu {
@@ -301,7 +310,7 @@ h4 { font-size: 1.25rem; }
 .hero {
     position: relative;
     padding: 140px 0 100px;
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdf4 100%);
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 50%, #f0f5f9 100%);
     overflow: hidden;
 }
 
@@ -335,7 +344,7 @@ h4 { font-size: 1.25rem; }
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--teal) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -430,7 +439,7 @@ h4 { font-size: 1.25rem; }
     right: 20px;
     width: 120px;
     height: 70px;
-    background: linear-gradient(135deg, var(--accent) 0%, #22d3ee 100%);
+    background: linear-gradient(135deg, var(--teal) 0%, var(--secondary) 100%);
     border-radius: 50px;
     opacity: 0.7;
 }
@@ -748,7 +757,7 @@ section {
 
 /* ===== Marketplace Section ===== */
 .marketplace {
-    background: linear-gradient(135deg, #f0f9ff 0%, #faf5ff 100%);
+    background: linear-gradient(135deg, #f5f7fa 0%, #f0f5f9 100%);
 }
 
 .marketplace-content {
